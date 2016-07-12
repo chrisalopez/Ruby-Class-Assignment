@@ -2,7 +2,7 @@ class Tenant
 
   attr_accessor :nickname, :occupation
 
-  def initialized(:f_name, :l_name, :born_on, :gender)
+  def initialized(f_name, l_name, born_on, gender)
     @f_name = f_name
     @l_name = l_name
     @born_on = born_on
@@ -10,3 +10,5 @@ class Tenant
   end
 
 end
+
+p1 = Tenant.new "Calvin", "Clifford", "male", "December 2"
